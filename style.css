@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+body {
+  background-color: #414141;
+  font-family: "Poppins", sans-serif;
+}
+
+#off-button {
+  width: 400px;
+  height: 200px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+.line {
+  width: 300px;
+  height: 100px;
+  border-radius: 50px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: #414141;
+}
+
+.line.line-change {
+  background: linear-gradient(180deg, #01fe9c, #fb04c5);
+}
+
+.button {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  font-size: 1.3rem;
+  background-color: #fff;
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+  position: absolute;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bolder;
+  transition: ease-in-out 200ms;
+  overflow: hidden;
+}
+#line:hover {
+  cursor: pointer;
+}
+
+.button.button-click {
+  transform: translateX(200px);
+}
+
+.text {
+  transition: all ease-in-out 200ms;
+}
+.text.text-change {
+  transform: translateY(50px);
+}
+
+.text-on {
+  transition: all ease-in-out 200ms;
+  position: absolute;
+  top: -25px;
+}
+.text-on.text-change {
+  background: -webkit-linear-gradient(90deg, #01fe9c, #fb04c5);
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+
+  top: 25px;
+}
