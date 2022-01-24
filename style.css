@@ -2,6 +2,8 @@
 body {
   background-color: #414141;
   font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
 }
 
 #off-button {
